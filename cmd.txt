@@ -1,0 +1,13 @@
+python main.py \
+--kind DATASTORE_KIND \
+--namespace DATASTORE_NAMESPACE \
+--project GCP_PROJECT \
+--output gs://PATH/TO/YOUR/BUCKET \
+--temp_location gs://PATH/TO/YOUR/BUCKET/TEMP \
+--staging_location gs://PATH/TO/YOUR/BUCKET/TEMP \
+--num_shards 1 \
+--region us-east1 \
+--job_name JOB_NAME \
+--runner DataflowRunner \
+--header "HEADER" \
+--extra_package /PATH/TO/dict2xml-1.7.0.tar.gz
